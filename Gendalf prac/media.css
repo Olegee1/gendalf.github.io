@@ -1,0 +1,323 @@
+@media (max-width: 1076px){
+    .video_text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video_text p{
+        margin-bottom: 21px;
+    }
+    .video_text_p p {
+      font-size:calc(12px + 8 * (100vw - 320px) / 880);
+
+    }
+    .video_text_p {
+    }
+
+  }
+  @media (max-width: 1041px) {
+    .about_us_buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about_us_buttons input{
+      margin: 0;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+@media (max-width: 999px){
+    .about_us_block {
+      display: flex;
+      flex-direction: column;
+        justify-content: center;
+    }
+    .about_us_images {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .swiper {
+        width: 80%;
+      }
+    .introduction_buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .introduction_buttons input{
+      margin: 0;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .new_container h1{
+      margin: 0px 10px;
+      
+    }
+  }
+  
+  @media (max-width: 658px) {
+    .footer_buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .footer_buttons {
+      margin: 0;
+      margin-bottom: 10px;
+      
+    }
+    .footer_buttons label{
+      width: 100%;
+    }
+    .form_wrapper input {
+      width: 100%;
+
+    }
+    
+    
+    .btn-tertiary {
+      width: 100%;
+    }
+    .form_wrapper input[type=submit] {
+      width: 100%;
+    }
+  
+}
+@media only screen and (max-width: 658px) {
+  .form_wrapper input[type=submit],
+  .btn-tertiary {
+      width: 100%;
+  }
+}
+  @media (max-width: 597px) {
+    .practice_text {
+
+    }
+    .practice_buttons input {
+      margin: 0;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 1040px) {
+    .header_button {
+      display: none;
+    }
+  }
+  @media (max-width: 900px) {
+    #recipes {
+      padding: 60px 80px;
+    }
+    
+    
+    
+    
+
+    
+    .swiper {
+      width: 50%;
+    }
+    .about_us_text h1{
+      
+      text-align: center;
+    }
+    .new_container h1{
+      text-align: center;
+    }
+  }
+  @media (max-width: 900px) {
+    .little {
+      display: flex !important;
+    }
+    
+    .header{
+      display: none;
+    }
+  }
+  @media (max-width: 765px) {
+    .swiper {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    #recipes {
+      padding: 40px 40px;
+    }
+  
+    .swiper {
+      width: 80%;
+    }
+    video{
+      width: 100%;
+
+      padding: 10px;
+    }
+  }
+
+
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue),90%,10%);
+      --fg: hsl(var(--hue),90%,90%);
+    }
+    .radio_label {
+      background-color: hsla(var(--hue),90%,30%,0);
+    }
+    .radio_label:has(input[type="radio"]:checked),
+    .radio_label:has(input[type="radio"]:not(:checked)):hover {
+      background-color: hsla(var(--hue),90%,30%,0.5);
+    }
+    input[type="radio"] {
+      background-color: hsl(var(--hue),90%,30%);
+      box-shadow:
+        0 0 0 0.0625em hsl(var(--hue),90%,50%),
+        0 0.125em 0.125em 0.0625em hsla(var(--hue),90%,10%,0.3);
+    }
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+  @-webkit-keyframes check {
+    0% {
+      height: 0;
+      width: 0;
+    }
+    25% {
+      height: 0;
+      width: 7px;
+    }
+    50% {
+      height: 20px;
+      width: 7px;
+    }
+  }
+  @keyframes check {
+    0% {
+      height: 0;
+      width: 0;
+    }
+    25% {
+      height: 0;
+      width: 7px;
+    }
+    50% {
+      height: 20px;
+      width: 7px;
+    }
+  }
+  @-webkit-keyframes expand {
+    0% {
+      -webkit-transform: scale3d(1, 0, 1);
+      opacity: 0;
+    }
+    25% {
+      -webkit-transform: scale3d(1, 1.2, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1, 0.85, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+  @keyframes expand {
+    0% {
+      -webkit-transform: scale3d(1, 0, 1);
+      transform: scale3d(1, 0, 1);
+      opacity: 0;
+    }
+    25% {
+      -webkit-transform: scale3d(1, 1.2, 1);
+      transform: scale3d(1, 1.2, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1, 0.85, 1);
+      transform: scale3d(1, 0.85, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1, 1.05, 1);
+      transform: scale3d(1, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: translate3d(0, -25px, 0);
+      opacity: 0;
+    }
+    25% {
+      -webkit-transform: translate3d(0, 10px, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(0, -6px, 0);
+    }
+    75% {
+      -webkit-transform: translate3d(0, 2px, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      -webkit-transform: translate3d(0, -25px, 0);
+      transform: translate3d(0, -25px, 0);
+      opacity: 0;
+    }
+    25% {
+      -webkit-transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(0, -6px, 0);
+      transform: translate3d(0, -6px, 0);
+    }
+    75% {
+      -webkit-transform: translate3d(0, 2px, 0);
+      transform: translate3d(0, 2px, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @media (max-width: 600px) {
+    .form_wrapper .col_half {
+      float: none;
+    }
+  
+    .bottom_row .col_half {
+      width: 50%;
+      float: left;
+    }
+  
+    .form_container .row .col_half.last {
+      border-left: none;
+    }
+  
+    .remember_me {
+      padding-bottom: 20px;
+    }
+  }
+
